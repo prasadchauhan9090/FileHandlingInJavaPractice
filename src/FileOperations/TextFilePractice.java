@@ -7,25 +7,33 @@ import java.io.IOException;
 public class TextFilePractice {
 
 
-    public static void main(String args[]) throws IOException
-    {
+
+    public static void main(String args[]) throws IOException {
 
         File file = new File("./sample.txt");
 
-        if(!file.exists())
-        file.createNewFile();
+        if (!file.exists())
+            file.createNewFile();
         //file.delete();
 
-      //READING ALL INPUTS FROM THE GIVEN SAMPLE.TXT
+        //READING ALL INPUTS FROM THE GIVEN SAMPLE.TXT
         FileInputStream fis = new FileInputStream(file);
 
         int asciiCode;
 
-
-        while((asciiCode = fis.read())!=-1)
-        {
+        String text = new String();
+        while ((asciiCode = fis.read()) != -1) {
+            text = text + String.valueOf((char) asciiCode);
             System.out.print((char)asciiCode);
+
         }
+        System.out.println("PRINTING: ");
+        System.out.print(text);
+
+        System.out.println("============================================");
+
+
+
 
 
         fis.close();
