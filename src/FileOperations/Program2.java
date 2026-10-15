@@ -24,6 +24,7 @@ public class Program2 {
             System.out.print((char)Ascii);
         }
 
+        fls.close();
 
 
 

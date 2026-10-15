@@ -28,6 +28,8 @@ public class TextFilePractice {
         }
 
 
+        fis.close();
+
 
 
     }
