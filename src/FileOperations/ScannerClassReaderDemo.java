@@ -17,5 +17,6 @@ public class ScannerClassReaderDemo {
 
               System.out.println(scanner.nextLine());
         }
+          scanner.close();
     }
 }
