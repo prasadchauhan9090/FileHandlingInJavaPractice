@@ -1,0 +1,8 @@
+Files in Java are used to store data permanently on a storage device,
+such as text, images, documents, and other information.
+File handling in Java is the process of creating, reading, writing, updating, and deleting files.
+Java provides classes in the java.io package, such as File, FileInputStream, FileOutputStream, FileReader, FileWriter, and BufferedReader, to perform file operations.
+The File class is used to represent a file or directory path and provides methods such as createNewFile(), exists(), delete(), getName(), and getAbsolutePath().
+FileInputStream reads data in bytes, while FileReader reads text as characters.
+Similarly, FileOutputStream writes bytes, and FileWriter writes characters to a file.
+File handling is important because it allows Java applications to store and retrieve data even after the program has stopped running.

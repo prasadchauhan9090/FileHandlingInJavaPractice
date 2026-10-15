@@ -21,6 +21,7 @@ public class TextFilePractice {
 
         int asciiCode;
 
+
         while((asciiCode = fis.read())!=-1)
         {
             System.out.print((char)asciiCode);
