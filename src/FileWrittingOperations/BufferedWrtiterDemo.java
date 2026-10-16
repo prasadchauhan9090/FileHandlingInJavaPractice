@@ -1,9 +1,6 @@
 package FileWrittingOperations;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class BufferedWrtiterDemo {
 
@@ -19,12 +16,32 @@ public class BufferedWrtiterDemo {
         //2. BufferedWritter Demo
         String st = "PK CHAUHAN demo on BufferedWriterDemo";
 
+        String str = st.toUpperCase();
+
         BufferedWriter bw = new BufferedWriter(new FileWriter(file));
 
-        bw.write(st);
-
-
+        bw.write(str);
         bw.close();
+
+
+
+        BufferedReader br = new BufferedReader(new FileReader(file));
+
+        String lines;
+
+        while((lines = br.readLine()) != null){
+
+            System.out.println(lines);
+        }
+
+
+
+
+
+
+
+
+        br.close();
     }
 
 }
