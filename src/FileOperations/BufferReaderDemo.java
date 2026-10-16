@@ -1,9 +1,6 @@
 package FileOperations;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class BufferReaderDemo {
 
@@ -14,9 +11,7 @@ public class BufferReaderDemo {
         if (!file.exists())
             file.createNewFile();
 
-        FileReader fr = new FileReader(file);
 
-        BufferedReader br = new BufferedReader(fr);
 
         int asciiCode;
 
@@ -28,8 +23,14 @@ public class BufferReaderDemo {
 //
 //        System.out.print(text);
 
-        String text = new String();
+//
+        FileInputStream fis = new FileInputStream(file);
+        InputStreamReader isr = new InputStreamReader(fis);
+        FileReader fr = new FileReader(file);
+        BufferedReader br = new BufferedReader(isr);
 
+
+       String text = new String();
        String line = new String();
        while((line = br.readLine())!=null)
        {
