@@ -1,4 +1,4 @@
-package FileOperations;
+package FileReadingOperations;
 
 import java.io.*;
 
@@ -39,8 +39,10 @@ public class BufferReaderDemo {
 
        System.out.println(text);
 
-        fr.close();
-        br.close();
+       fis.close();
+       isr.close();
+       fr.close();
+       br.close();
 
 
 
