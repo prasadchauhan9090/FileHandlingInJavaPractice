@@ -13,7 +13,6 @@ public class FileReaderDemoPractice {
 
         if(!file.exists())
         file.createNewFile();
-
         FileReader fr = new FileReader(file);
 
         int ascii;

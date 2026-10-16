@@ -1,0 +1,6 @@
+BufferedReader in Java is a class in the java.io package used to read text efficiently from an input stream, such as a file or keyboard input.
+It uses an internal buffer to reduce the number of read operations, improving efficiency when reading large amounts of text.
+The BufferedReader class provides methods such as read(), which reads a single character, and readLine(), which reads an entire line of text at a time.
+It is commonly used with FileReader to read text files line by line. For example, BufferedReader br = new BufferedReader(new FileReader("Demo.txt"));
+creates a reader to read the contents of Demo.txt. We can use br.readLine() inside a loop until it returns null, which indicates the end of the file.
+BufferedReader is useful because it makes reading text files easier and more efficient, especially when processing multiple lines.
